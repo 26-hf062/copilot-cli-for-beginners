@@ -513,6 +513,8 @@ copilot
 
 > 💡 **Model family shortcuts**: You can also type a short family alias — like `opus`, `sonnet`, `haiku`, `gpt`, or `gemini` — directly in the `/model` picker instead of scrolling through the full list. Copilot will pick the best available model in that family for you.
 
+> 💡 **Session-only model change**: Use `/model --session` (or `/model -s`) to change the model for just your current session, without changing your global default. This is handy when you want to try a different model for one task without affecting all your future sessions. When the session ends, the model reverts to your usual default.
+
 </details>
 
 ---

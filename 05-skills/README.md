@@ -622,9 +622,26 @@ Pre-made skills are also available from community repositories:
 
 - **[Awesome Copilot](https://github.com/github/awesome-copilot)** - Official GitHub Copilot resources including skills documentation and examples
 
+### Installing a Skill with `copilot plugins install`
+
+You can install a skill directly from the Copilot CLI without leaving your terminal. This is the simplest option because it doesn't require any additional tools:
+
+```bash
+# Install a skill from a local file
+copilot plugins install --skill .github/skills/my-skill/SKILL.md
+
+# Install a skill from a URL
+copilot plugins install --skill https://example.com/skills/security-audit/SKILL.md
+
+# Install into the current project (shared with the team via git)
+copilot plugins install --skill https://example.com/skills/my-skill/SKILL.md --scope project
+```
+
+> 💡 **`--scope project` vs default**: By default, skills are installed at the user level (`~/.copilot/skills/`) and are available in all your projects. Adding `--scope project` installs the skill into `.github/skills/` in the current repository, making it part of the project and visible to everyone on your team.
+
 ### Installing a Community Skill with GitHub CLI
 
-The easiest way to install a skill from a GitHub repository is using the `gh skill install` command (requires [GitHub CLI v2.90.0+](https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/)):
+Another option is the `gh skill install` command (requires [GitHub CLI v2.90.0+](https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli/)):
 
 ```bash
 # Browse and interactively select a skill from awesome-copilot
