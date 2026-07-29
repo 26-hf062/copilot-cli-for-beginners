@@ -125,7 +125,7 @@ copilot
 # Leave plan mode and the model reverts to your session model automatically
 ```
 
-> 💡 **Why set a plan-mode model?** Planning prompts tend to be lighter tasks — outlining steps, identifying files to change, or scoping work. A faster, cheaper model (like `haiku`) is often plenty for this. Saving your premium-quota model for the actual implementation step is a smart habit.
+> 💡 **Why set a plan-mode model?** A high-quality plan created by a frontier model upfront can actually save tokens and time overall — a precise, well-scoped plan means fewer back-and-forth corrections during implementation. Consider using your most capable model for planning and a lighter one for simpler follow-up tasks.
 
 > 📚 **Official Documentation**: [GitHub Copilot CLI Agents](https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
 
