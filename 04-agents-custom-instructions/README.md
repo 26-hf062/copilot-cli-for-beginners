@@ -120,14 +120,14 @@ copilot
 > /model plan
 
 # Or specify a model ID directly (use 'off' to clear the plan-mode model)
-> /model plan claude-haiku-4.5
+> /model plan gpt-5.6-sol
 
 # Leave plan mode and the model reverts to your session model automatically
 ```
 
-> 💡 **Why set a plan-mode model?** A high-quality plan created by a frontier model upfront can actually save tokens and time overall — a precise, well-scoped plan means fewer back-and-forth corrections during implementation. Consider using your most capable model for planning and a lighter one for simpler follow-up tasks.
+> 💡 **Why set a plan-mode model?** A high-quality plan created by a frontier model upfront can actually save tokens and time overall. A precise, well-scoped plan means fewer back-and-forth corrections during implementation.
 
-> 📚 **Official Documentation**: [GitHub Copilot CLI Agents](https://docs.github.com/copilot/how-tos/use-copilot-agents/use-copilot-cli#use-custom-agents)
+> 📚 **Official Documentation**: [GitHub Copilot CLI Agents](https://docs.github.com/copilot/how-tos/copilot-cli/use-copilot-cli/invoke-custom-agents)
 
 ---
 
